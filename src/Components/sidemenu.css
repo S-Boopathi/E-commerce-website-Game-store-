@@ -1,0 +1,107 @@
+.sideMenu{
+    width: 20%;
+    height: 100%;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 30px;
+    background: var(--bgColor);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.sideMenu .logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+    font-size: 3.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sideMenu .nav li a{
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s;
+    background: var(--bgColor);
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 100%;
+    transition: 0.5s;
+}
+.sideMenu .nav li a:hover,
+.sideMenu .nav li a.active{
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35)
+}
+.sideMenu .social{
+    position: absolute;
+    bottom: 50px;
+    left: -2px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2px;
+    transition: 0.5s;
+}
+.sideMenu .social li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.sideMenu .social li a:hover {
+    color: var(--second);
+}
+.sideMenu.active {
+    width: 7%;
+    transition: 1s;
+    overflow: hidden;
+    align-items: center;
+}
+.sideMenu.active .brand,
+.sideMenu.active .navName{
+    display: none;
+}
+.sideMenu.active .nav li a{
+    font-size: 1.8em;
+
+}
+.sideMenu.active .social {
+    position: relative;
+    font-size: 10px;
+    left: -23px;
+    top: -4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sideMenu .social li .share{
+    background:  var(--second);
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.sideMenu .social li .share:hover {
+    background: var(--primary);
+}
+.sideMenu.active{
+    width: 7%;
+    transition: 1s;
+    overflow: hidden;
+    align-items: center;
+}
